@@ -1,0 +1,99 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=`, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+      <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+      <link rel="preconnect" href="//fonts.googleapis.com">
+      <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+      <link href="//fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">   <!-- google style for footer text -->
+      <title>Document</title>
+  </head>
+  <body>
+    <title>{% block title %}{% endblock %}</title>
+
+      <!--header  -->
+    <header>
+      <div class="header_area">
+        <div class="box logo">
+          <a href="index.html">
+            <img id="header_logo" src="{% static 'css/logo.png' %}" alt="logo" height="75px" >
+          </a>    
+        </div>
+        <div class="box menu">
+          <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">1</a></li>
+          </ul>
+        </div>
+        <div class="box cart">
+        
+          <h1>Типа КОРЗИНА</h1>
+      
+        </div>
+
+      </div>
+    </header>
+
+    <!-- main -->
+    <main class="main_content">
+    
+      <aside class="box side_menu">
+        <p font-style= ><Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eos itaque unde neque, exercitationem et mollitia est tempore? Animi quasi odit enim sint commodi ipsum et cupiditate dolor incidunt aut?</p>
+        
+      </aside>
+      <article class="box shop">
+        {% block content %}{% endblock %}
+      </article>
+    
+    </main>
+    
+      <!-- footer -->
+      <footer>
+        <div class="footer_lvl1">
+          <div class="footer_lvl1_left">
+
+          </div>
+
+
+          <div class="footer_lvl1_centr">
+              <ul class="footer-tabel">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Связаться с нами</a></li>
+                <li><a href="#">О нас</a></li>
+              </ul>
+          </div>
+
+
+          <div class="footer_lvl1_right">
+
+          </div>
+
+        </div>
+
+        <div class="footer_lvl2">
+          <div class="footer_lvl2_left">
+            <p>&copy; ООО "PHS Team", 2021-2022</p>
+          </div>
+
+
+          <div class="footer_lvl2_centr">
+              
+          </div>
+
+
+          <div class="footer_lvl1_right">
+
+          </div>
+        </div>
+      </footer>
+
+  </body>
+</html>
