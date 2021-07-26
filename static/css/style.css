@@ -30,7 +30,7 @@
   .header_area{
   display:flex;
   flex-basis: 100%;
-  background-image: url(Header_back.png);
+  background-color: #F3F3F3;
   }
 
 
